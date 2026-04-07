@@ -1,0 +1,8 @@
+<h2>Movies List</h2>
+
+{% for m in movies %}
+    <p>
+        {{m[1]}} - {{m[2]}} - {{m[3]}}
+        <a href="/book/{{m[0]}}">Book</a>
+    </p>
+{% endfor %}
